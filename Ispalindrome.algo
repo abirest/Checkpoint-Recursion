@@ -1,0 +1,13 @@
+PROCEDURE Ispalindrome(left, right:INTEGER, word:STRING[50])
+
+BEGIN
+    IF (word.length = 0 OR left = right) THEN
+        write("it's palindrome")
+    ELSE
+        IF (word[left] = word[right]) THEN
+            Ispalindrome(left+1, right-1, word)
+        ELSE
+        write("it's not palindrome")
+        END_IF
+    END_IF
+END
